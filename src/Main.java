@@ -30,7 +30,7 @@ public class Main {
                     System.out.println(g.lowergen());
                     break;
                 case 3:
-                    System.out.println(g.puntgen());
+                    System.out.println(g.punctgen());
                     break;
                 case 4:
                     System.out.println("Have a nice day!");

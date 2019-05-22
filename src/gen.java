@@ -28,7 +28,7 @@ public class gen {
         return pass;
     }
 
-    public static String puntgen(){
+    public static String punctgen(){
         for(int i = 0; i < length; i++){
             pass = pass + (lowercase.charAt(r.nextInt(lowercase.length())));
         }
