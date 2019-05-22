@@ -18,7 +18,8 @@ public class Main {
             System.out.println("Please choose a method");
             System.out.println("1 - Uppercase + Numbers");
             System.out.println("2 - Uppercase + Lowercase + Numbers");
-            System.out.println("3 - EXIT");
+            System.out.println("3 - All Characters");
+            System.out.println("4 - EXIT");
 
             int choice = input.nextInt();
             switch (choice) {
@@ -29,6 +30,9 @@ public class Main {
                     System.out.println(g.lowergen());
                     break;
                 case 3:
+                    System.out.println(g.puntgen());
+                    break;
+                case 4:
                     System.out.println("Have a nice day!");
                     System.exit(0);
                     break;

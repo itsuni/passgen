@@ -2,13 +2,13 @@ import java.util.Random;
 
 public class gen {
 
-    final static String uppercase = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    final static String lowercase = "0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+    private final static String uppercase = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private final static String lowercase = "0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz!@#$%^&*()-=[{]}|:;'<,>.?/";
 
-    static Random r = new Random();
+    private static Random r = new Random();
 
-    static int length;
-    static String pass = "";
+    private static int length;
+    private static String pass = "";
 
     public gen(int x) {
           length = x;
@@ -23,6 +23,13 @@ public class gen {
 
     public static String lowergen(){
         for(int i = 0; i < length; i++) {
+            pass = pass + (lowercase.charAt(r.nextInt(lowercase.length()-26)));
+        }
+        return pass;
+    }
+
+    public static String puntgen(){
+        for(int i = 0; i < length; i++){
             pass = pass + (lowercase.charAt(r.nextInt(lowercase.length())));
         }
         return pass;
