@@ -1,2 +1,2 @@
 # passgen
-A simple password generator
+A (very) simple password generator
